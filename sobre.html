@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <!--Cache-->
+    <meta http-equiv="Pragma" content="no-cache" /><!--Cache-->
+    <meta http-equiv="Expires" content="0" /><!--Cache-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sobre.css?v=20231031">
+    <title>O Hotel - EC 2025</title>
+</head>
+<body> 
+    <div class="overlay"></div>  
+    <header>
+        <div>
+            <div class="menu-icon">&#9776;</div> 
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>                
+                    <li><a href="inscricao.html">Inscrição</a></li>
+                    <li><a href="Pagamento.html">Pagamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+         
+    <article>
+        <header id="sobre"><h2>Hotel Guarany</h2></header>
+        <div class="social-links">
+            <a href="https://www.instagram.com/hotelguaranyaguas/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <img src="assets/img/instagram_2111463.png" alt="Instagram">
+            </a> <br>
+            <a href="https://www.hotelguarany.com.br/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <img src="assets/img/browser_12192844.png" alt="Site">
+            </a>
+        </div>
+        <div class="location-info">
+            <h3>Endereço</h3>
+            <p id="endereco">Rua São Paulo, 444, Águas de Lindóia - SP</p>
+            <button onclick="toggleMenu()">Abrir Endereço</button>
+        </div>
+    
+        <div id="mensagem" class="mensagem" style="display: none;">
+            <p>Escolha uma opção:</p>
+            <button onclick="abrirWaze()">Waze</button>
+            <button onclick="abrirMaps()">Google Maps</button>
+            <button onclick="fecharMensagem()">Fechar</button>
+        </div>
+        
+        <!--<div id="conteudosobre">
+            <p><strong>Endereço: </strong>Rua São Paulo, 444</p>
+            <p>Águas de Lindóia - SP, 13940-000 </p>  <br>        
+            <p>Check-in: A partir dàs 8:00hs</p>
+        </div> --> 
+        <section>
+            
+            <div class="container">
+
+                <!-- O Hotel -->
+                <div class="card">
+                <img src="assets/img/saguão.jpg" alt="Área de lazer do hotel">
+                <h2>O Hotel</h2>
+                <p>
+                    O Hotel Guarany está localizado no centro da cidade de Águas de Lindóia. <br>
+                    Foi idealizado no ano de 1945 <br>
+                    Atualmente, o hotel conta com piscina aquecida e coberta, 
+                    estacionamento coberto e descoberto, fitness, cinema, spa, 
+                    pizzaria e um belo espaço Guarany café Gastronomia.
+                </p>
+                </div>
+
+             <!-- Card de Yspa -->
+            <div class="card">            
+            <div class="carousel">
+                <img src="assets/img/spa.jpg" alt="Yspa 1">
+                <img src="assets/img/spa2.jpg" alt="Yspa 2">
+                <img src="assets/img/spa3.jpg" alt="Yspa 3">
+            </div>
+            <h2>Yspa</h2>
+            <p>Desfrute de momentos no Yspa do Hotel (custo a parte).</p>
+            </div>
+
+            <!-- Card de Piscina -->
+            <div class="card">            
+            <div class="carousel">
+                <img src="assets/img/piscina.jpg" alt="Piscina 1">
+                <img src="assets/img/piscinacoberta.jpg" alt="Piscina 2">
+            </div>
+            <h2>Piscina</h2>
+            <p>Relaxe na piscina ao ar livre com vista para a natureza ou na Piscina coberta.</p>
+            </div>
+
+            <!-- Card de Jogos -->
+            <div class="card">
+            <img src="assets/img/jogos.jpg" alt="Sala de jogos do hotel">
+            <h2>Jogos</h2>
+            <p>Espaço com jogos e atividades para crianças e adultos.</p>
+            </div>
+
+            <!-- Card de Refeitório -->
+            <div class="card">
+                <div class="carousel">
+                    <img src="assets/img/refeitório.jpg" alt="Refeitório 1">
+                    <img src="assets/img/café.jpg" alt="Refeitório 2">
+                    <img src="assets/img/restaurante.jpg" alt="Refeitório 3">             
+                                       
+                </div>
+            <h2>Refeitório</h2>
+            <p>Refeições deliciosas servidas em um ambiente acolhedor com muitas opções.</p>
+            </div>
+            </div>
+            
+        </section>
+    </article>
+
+    <footer>&copy; 2024 - Encontro de Casais IMW3</footer>   
+    <script src="assets/js/sobre.js?v=20231030"></script> 
+</body>
+</html>

@@ -1,0 +1,271 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('../img/planodefundo.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    margin: 0; 
+    position:relative;    
+    
+}
+
+/* Estilo do artigo */
+article {
+    position: relative; /* Para que o texto fique acima da sobreposição */    
+    z-index: 1; /* Garante que o texto fique acima da sobreposição, e abaixo do menu */
+    color: #333; 
+    text-align:justify; 
+    margin-top: 10%; 
+    margin-left: 0%;
+    padding: 2%; 
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente para legibilidade */
+    border-radius: 10px; 
+    box-shadow: 1000px 0 1000px rgba(0, 0, 0, 0.8);
+    
+}
+
+#conteudosobre{
+    line-height: 50%;
+    margin-bottom: 35px;
+}
+
+/* Estilos para os links de redes sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    margin-bottom: 60px;
+}
+
+.social-icon img {
+    width: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Aumento leve ao passar o mouse */
+    opacity: 0.8; /* Opacidade ao passar o mouse */
+}
+
+
+/* Legibilidade do texto */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background-color: rgba(255, 255, 255, 0.7); /* Sobreposição semitransparente */
+    z-index: 1; /* Ficar acima da imagem de fundo */
+}
+
+/*Sobre o hotel*/
+#sobre{
+    
+        font-size: 40px;
+        color:goldenrod;
+        font-family: 'Dancing Script', sans-serif;        
+        text-align: center;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Card de informações */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h2 {
+    color: #555;
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px 20px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Estilo do Carrossel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Defina a altura conforme a necessidade */
+    overflow: hidden;
+}
+
+.carousel img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    animation: slide 15s infinite; /* Muda de imagem a cada 10 segundos */
+}
+
+.carousel img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.carousel img:nth-child(2) {
+    animation-delay: 5s; /* Imagem 2 começa após 5 segundos */
+}
+
+.carousel img:nth-child(3) {
+    animation-delay: 9s; /* Imagem 3 começa após 9 segundos */
+}
+
+/* Animação para alternar imagens */
+@keyframes slide {
+    0%, 30% { opacity: 1; }
+    0%, 100% { opacity: 0; }
+}
+
+/*Navegação*/
+
+.menu-icon {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-size: 40px; /* Tamanho do ícone */
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px; 
+    width: 200px; /* Largura do menu */
+    height: 100%;
+    background-color: rgb(2, 2, 2, 0.7); /* Fundo com transparência */
+    color: white;
+    transition: left 0.3s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
+    z-index: 2; /* Garante que o menu fique acima de tudo */
+    
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px 0; 
+    margin: 0;
+    margin-left: 30px;
+    margin-top: 33px;
+    
+}
+
+.sidebar li {
+    margin: 20px 0; 
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon:hover + .sidebar, 
+.sidebar:hover {
+    left: 0; /* Mostra o menu ao passar o mouse */
+}
+
+/*endereço*/
+.location-info {
+    background: rgba(255, 255, 255, 0.116);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 200px 500px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+#endereco {
+    padding: 10px;
+    border: 1px solid #cccccc8a;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Para incluir o padding no total */
+    font-size: 90%;
+}
+
+button {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: goldenrod;
+}
+
+.mensagem {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Faz a mensagem aparecer sobre outros elementos */
+    border-radius: 8px; 
+}
+
+/*parametrização para smartphones*/
+@media screen and (max-width: 480px){
+    article {
+        align-items:auto;        
+        margin-top: 30%;
+    } 
+    .container {
+        padding: 10px;
+    }
+    .card h2 {
+        font-size: 18px;
+    }
+    .card p {
+        font-size: 14px;
+    }  
+}
+
+/*Rodpé da página*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    font-size: 11px;         
+    z-index: 1;   
+    color: white;      
+    background-color: rgba(0, 0, 0, 0.39);
+    left: 0;    
+}

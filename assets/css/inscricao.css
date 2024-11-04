@@ -1,0 +1,169 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    background-image: url('../img/planodefundo.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 138vh; 
+    margin: 0; 
+    position:relative; 
+        
+}
+
+#titulo1{
+    font-family: 'Dancing Script', sans-serif;  
+    font-size: 29px;
+    color: goldenrod;
+}
+
+/*Navegação*/
+
+.menu-icon {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-size: 40px; /* Tamanho do ícone */
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px; 
+    width: 200px; 
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.9); 
+    color: white;
+    transition: left 0.3s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px 0; 
+    margin: 0;
+    margin-left: 30px;
+    margin-top: 33px;
+}
+
+.sidebar li {
+    margin: 20px 0; /* Espaçamento entre os itens */
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon:hover + .sidebar, 
+.sidebar:hover {
+    left: 0; /* Mostra o menu ao passar o mouse */
+}
+
+/*backend - formulário*/
+
+.form-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.6); /* Fundo branco semitransparente para legibilidade */
+    border-radius: 10px; 
+    padding: 10px 40px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1100px 1000px rgba(1, 1, 1, 0.5);
+    margin-top: 60px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+.field {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.field:last-child {
+    margin-right: 0;
+}
+
+.pessoas {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: goldenrod;
+    color: #fff;
+    cursor: pointer;
+    border: none;   
+    margin: 0px 0 0 0;
+    padding: 10px 0;     
+    
+}
+
+#formapagamento {
+    margin: 20px 0;        
+}
+
+input[type="radio"]{       
+    margin-left: 0;
+    width: 10%;    
+}
+
+#artpag{
+    margin-bottom: 3%;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 210, 97);
+}
+
+#successMessage {
+    color: rgb(10, 6, 248);
+    display: none;
+}
+
+/*parametrização para smartphones*/
+@media screen and (max-width: 480px){
+    .form-container {
+        width: 80%;
+        font-size: 90%;
+    }
+    h3{
+        font-size: 17px;
+    }
+    h2{
+        font-size: 19.5px;
+        text-align: center;
+    }
+}
+
+/*Rodpé da página*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    font-size: 11px;         
+    z-index: 1;   
+    color: white;      
+    background-color: rgba(0, 0, 0, 0.39);
+    left: 0;    
+}

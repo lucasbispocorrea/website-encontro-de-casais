@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <!--Cache da página-->
+    <meta http-equiv="Pragma" content="no-cache" /><!--Cache da página-->
+    <meta http-equiv="Expires" content="0" /><!--Cache da página-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/inscricao.css?v=20231029">
+    <title>Inscrição - EC 2025</title>
+</head>
+<body>  
+    <header>
+        <!--Menu de navegação-->
+        <div>
+            <div class="menu-icon">&#9776;</div> 
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="sobre.html">Sobre o Hotel</a></li>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="Pagamento.html">Pagamento</a></li>                                  
+                </ul>
+            </nav>
+        </div>
+    </header>  
+    <div class="form-container">
+        <h2 id="titulo1">Encontro Regional de Casais <br> IMW3 - 2025</h2>
+        <h3>Inscrição:</h3>
+        
+        <form id="registrationForm">
+
+            <div class="form-group">
+                <div class="field">
+                    <label class="pessoas" for="name">Nome (Ela):</label>
+                    <input type="text" id="name" name="entry.447344509" placeholder="Nome Completo" required>
+                </div>
+                <div class="field">
+                    <label class="pessoas" for="conjuge">Nome (Ele):</label>
+                    <input type="text" id="conjuge" name="entry.554177663" placeholder="Nome Completo" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="field">
+                    <label class="pessoas" for="shoe-size">N° Calçado (Ela):</label>
+                    <input type="text" id="shoe-size" name="entry.749849924" placeholder="ex: 35" required>
+                </div>
+                <div class="field">
+                    <label class="pessoas" for="shoe-size-conjuge">N° Calçado (Ele):</label>
+                    <input type="text" id="shoe-size-conjuge" name="entry.1600454135" placeholder="ex: 40" required>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <div class="field">
+                    <label class="pessoas" for="phone">Whatsapp (Ela):</label>
+                    <input type="tel" id="wpp" name="entry.706622401" placeholder="11 91234-1234" required>
+                </div>
+                <div class="field">
+                    <label class="pessoas" for="phone-conjuge">Whatsapp (Ele):</label>
+                    <input type="tel" id="wpp-conjuge" name="entry.1244377104" placeholder="11 91234-1234" required>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <div class="field">
+                    <label class="pessoas" for="email">E-mail (Ela):</label>
+                    <input type="text" id="email" name="entry.1529938659" placeholder="exemplo@exemplo.com" required>
+                </div>
+                <div class="field">
+                    <label class="pessoas" for="email-conjuge">E-mail (Ele):</label>
+                    <input type="text" id="email-conjuge" name="entry.1236415605" placeholder="exemplo@exemplo.com" required>
+                </div>
+            </div>       
+            
+
+            <div class="form-group">
+                <div class="field">
+                    <label for="igreja">Igreja:</label>
+                    <input type="text" id="igreja" name="entry.1633205537" placeholder="IMW Vila Guilherme" required>
+                </div>    
+                <div class="field">
+                    <label for="distrito">Distrito:</label>
+                    <input type="text" id="distrito" name="entry.1460704063" placeholder="Zona Norte" required>
+                </div>
+            </div>
+
+            <div id="formapagamento">
+                <article id="artpag">Forma de Pagamento</article>
+                <div class="pagamento-opcao">
+                    <input type="radio" id="cartao" name="entry.291555730" value="Cartão de Crédito" required>
+                    <label for="cartao">Cartão de Crédito</label>
+                </div>
+                <!--<div class="pagamento-opcao">
+                    <input type="radio" id="pix" name="entry.291555730" value="Pix À vista" required>
+                    <label for="pix">Pix À vista</label>
+                </div>-->
+                <div class="pagamento-opcao">
+                    <input type="radio" id="pixparcelado" name="entry.291555730" value="Pix Parcelado" required>
+                    <label for="pixparcelado">Pix À vista ou Parcelado</label>
+                </div>
+            </div>
+            
+            <input type="submit" id="btnInscrever" value="Enviar">
+        </form>
+        <!-- Mensagem de sucesso -->
+        <p id="successMessage">Inscrição realizada com sucesso!</p>
+    </div>
+    <footer>&copy; 2024 - Encontro de Casais IMW3</footer>
+    <script src="assets/js/inscricao.js?v=20231029"></script>    
+</body>
+</html>

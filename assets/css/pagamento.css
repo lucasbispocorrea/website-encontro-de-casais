@@ -1,0 +1,175 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    padding: 0px;
+    background-image: url('../img/planodefundo.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+#titulopagamento{
+    font-family: 'Dancing Script', sans-serif;  
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f993;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+}
+
+.payment-info p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    line-height: 18px;
+}
+
+#copiar-chave {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: goldenrod;
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    display: inline-block;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    
+    
+}
+
+
+#copiar-chave:hover {
+    background-color: rgb(255, 210, 97);
+    transform: translateY(-3px); /* Move o botão para cima */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+#enviar-comprovante{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: goldenrod;
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    display: inline-block;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    
+    
+}
+
+
+#enviar-comprovante:hover {
+    background-color: rgb(255, 210, 97);
+    transform: translateY(-3px); /* Move o botão para cima */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.61); /* Aumenta a sombra ao passar o mouse */
+}
+
+/*Navegação*/
+
+.menu-icon {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-size: 40px; /* Tamanho do ícone */
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px; 
+    width: 200px;
+    height: 100%;
+    background-color: rgb(2, 2, 2, 0.7); 
+    color: white;
+    transition: left 0.3s;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.8);
+    z-index: 2; /* Garante que o menu fique acima de tudo */
+    
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px 0; 
+    margin: 0;
+    margin-left: 30px;
+    margin-top: 33px;
+    
+}
+
+.sidebar li {
+    margin: 20px 0; 
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon:hover + .sidebar, 
+.sidebar:hover {
+    left: 0; /* Mostra o menu ao passar o mouse */
+}
+
+/*opções de parcelamento*/
+
+#calcula {
+    padding: 1px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#resultado {
+    font-weight: bold;
+    color: goldenrod;
+    margin-top: 20px;
+}
+
+/*parametrização para smartphones*/
+@media screen and (max-width: 480px){
+    #titulo{
+        font-size: 30px;        
+    }
+    #subtitulo1{
+        font-size: 18px;
+    }
+    p{
+        line-height: 29px;
+    }
+    .secao1{
+        height: 58%;
+    }
+    
+}
+
+
+/*Rodpé da página*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    font-size: 11px;         
+    z-index: 1;   
+    color: white;      
+    background-color: rgba(0, 0, 0, 0.39);
+    left: 0;    
+}

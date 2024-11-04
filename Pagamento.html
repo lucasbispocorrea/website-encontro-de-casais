@@ -1,0 +1,66 @@
+</html><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <!--Cache-->
+    <meta http-equiv="Pragma" content="no-cache" /><!--Cache-->
+    <meta http-equiv="Expires" content="0" /><!--Cache-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pagamento.css?v=20231029">
+    <title>Pagamento - EC 2025</title>
+</head>
+<body>
+    <div class="overlay"></div> <!-- Sobreposição --> 
+    <header>
+        <div>
+            <div class="menu-icon">&#9776;</div> 
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>                
+                    <li><a href="inscricao.html">Inscrição</a></li>
+                    <li><a href="sobre.html">O Hotel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <div class="container">
+        <h1 id="titulopagamento">Pagamento</h1>
+        
+
+        <div class="payment-info">
+            <h3>À Vista</h3>            
+            <img src="assets/img/Pix.jpeg" alt="QR Code Pix" class="qr-code">
+            <p><strong>R$ 2.210,00</strong></p>
+            <p>Escaneie o QR code para efetuar o pagamento <strong>à vista</strong>.</p><br><br>
+            <h3>Parcelado no Pix</h3>            
+            <div>
+                <label for="parcelas">Calcule o valor das parcelas:</label>
+                <select id="parcelas">
+                    <option value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                    <option value="4">4x</option>
+                    <option value="5">5x</option>
+                    <option value="6">6x</option>
+                    <option value="7">7x</option>
+                    <option value="8">8x</option>
+                    <option value="9">9x</option>
+                    <option value="10">10x</option>
+                    <option value="11">11x</option>                    
+                    <option value="12">12x</option>
+                </select>
+                <button onclick="calcularParcelas()" id="calcula">Calcular</button>
+            
+                <p id="resultado"></p>
+            </div>
+            <p><strong>Chave Pix (CNPJ):</strong> <span id="chave-pix">13.823.676/0094-26</span></p>            
+            <button id="copiar-chave">Copiar Chave Pix</button><br><br>
+            <p>Para envio dos comprovantes, ou falar via Whatsapp</p>            
+            <button id="enviar-comprovante">Enviar Comprovante</button>
+        </div>
+    </div>
+    <footer>&copy; 2024 - Encontro de Casais IMW3</footer>
+    <script src="assets/js/pagamento.js?v=20231030"></script>
+</body>
+</html>

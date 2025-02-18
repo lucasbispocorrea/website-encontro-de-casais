@@ -45,20 +45,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-//redirecionamento para whatsapp, caso os pagamentos fossems automatizados
-/*document.getElementById('registrationForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio normal do formulário
-
-    const pagamento = document.querySelector('input[name="entry.291555730"]:checked').value;
-
-    if (pagamento === 'Cartão de Crédito') {
-        // Substitua o número e a mensagem pelo que você deseja enviar pelo WhatsApp
-        const numeroWhatsApp = '5511962305130'; // número com DDD
-        const mensagem = 'Olá, gostaria de realizar o pagamento do encontro de casais, com cartão de crédito!';
-        const urlWhatsApp = `https://wa.me/${5511962305130}?text=${encodeURIComponent(mensagem)}`;
-        window.location.href = urlWhatsApp; // Redireciona para o WhatsApp
-    } else if (pagamento === 'Pix Parcelado') {
-        // Substitua pela URL da sua página de chave Pix
-        window.location.href = 'Pagamento.html'; // Redireciona para a página Pix
-    }
-});*/
